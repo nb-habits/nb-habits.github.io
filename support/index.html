@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NB Habits &#x2013; Support</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="lang-de">
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="logo-mark">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.8 -5.8 155.6 131.6" role="img" aria-label="NB Habits">
+        <path d="M66 20H99a19 19 0 0 1 0 38H66M66 58H97a21 21 0 0 1 0 42H66" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 100V20L66 100V20" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>Support</h1>
+    <p class="de">NB Habits für iOS</p>
+    <p class="en">NB Habits for iOS</p>
+  </div>
+</div>
+
+<div class="sub-lang-switcher">
+  <button class="active" onclick="setLang('de')">Deutsch</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<a class="back-link" href="../">&#x2190; NB Habits</a>
+
+<div class="page">
+
+  <div class="de">
+    <section>
+      <h2>Kontakt</h2>
+      <div class="card">
+        <p>Bei Fragen, Fehlerberichten oder Feedback schreibe uns gerne eine E-Mail:</p>
+        <p><a href="mailto:nb-habits@proton.me">nb-habits@proton.me</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Häufig gestellte Fragen</h2>
+      <div class="card">
+        <h2>Werden meine Daten in der Cloud gespeichert?</h2>
+        <p>Nein. Alle Daten bleiben ausschließlich auf deinem Gerät. NB Habits verwendet keine Cloud-Synchronisierung und kein Benutzerkonto.</p>
+      </div>
+      <div class="card">
+        <h2>Wie kann ich meine Daten sichern?</h2>
+        <p>Deine Daten werden durch das reguläre iPhone-Backup (iTunes/Finder oder iCloud-Backup) gesichert. In der App findest du unter Einstellungen > Daten auch eine Export-Funktion.</p>
+      </div>
+      <div class="card">
+        <h2>Was passiert, wenn ich die App lösche?</h2>
+        <p>Alle lokalen App-Daten werden gelöscht. Stelle sicher, dass du vorher ein Backup erstellt oder deine Daten exportiert hast.</p>
+      </div>
+      <div class="card">
+        <h2>Wie funktioniert die Ernährungsfunktion?</h2>
+        <p>Die Ernährungsfunktion greift auf die Open Food Facts-Datenbank zu, um Lebensmittelinformationen bereitzustellen. Dabei werden Barcodes oder Suchbegriffe an openfoodfacts.org gesendet. Weitere Details in der <a href="../privacy/">Datenschutzerklärung</a>.</p>
+      </div>
+      <div class="card">
+        <h2>Wie installiere ich das Widget?</h2>
+        <p>Drücke lange auf deinen Home-Screen, tippe auf das + Symbol oben links, suche nach "NB Habits" und wähle ein Widget aus.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Datenschutz</h2>
+      <p>Unsere vollständige Datenschutzerklärung findest du unter: <a href="../privacy/">nb-habits.github.io/privacy/</a></p>
+    </section>
+  </div>
+
+  <div class="en">
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>For questions, bug reports, or feedback, feel free to email us:</p>
+        <p><a href="mailto:nb-habits@proton.me">nb-habits@proton.me</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <div class="card">
+        <h2>Is my data stored in the cloud?</h2>
+        <p>No. All data stays exclusively on your device. NB Habits uses no cloud sync and no user account.</p>
+      </div>
+      <div class="card">
+        <h2>How can I back up my data?</h2>
+        <p>Your data is backed up through your iPhone's regular backup (iTunes/Finder or iCloud Backup). In the app, you can also find an export function under Settings > Data.</p>
+      </div>
+      <div class="card">
+        <h2>What happens if I delete the app?</h2>
+        <p>All local app data will be deleted. Make sure you have a backup or have exported your data beforehand.</p>
+      </div>
+      <div class="card">
+        <h2>How does the nutrition feature work?</h2>
+        <p>The nutrition feature accesses the Open Food Facts database to provide food information. Barcodes or search terms are sent to openfoodfacts.org. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
+      </div>
+      <div class="card">
+        <h2>How do I install the widget?</h2>
+        <p>Long-press your Home Screen, tap the + icon in the top-left, search for "NB Habits", and select a widget.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>Our full privacy policy is at: <a href="../privacy/">nb-habits.github.io/privacy/</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 NB Habits</p>
+  </footer>
+
+</div>
+
+<script>
+function setLang(lang) {
+  document.body.className = 'lang-' + lang;
+  document.querySelectorAll('button').forEach(function(b) {
+    b.classList.toggle('active', b.textContent.toLowerCase().startsWith(lang === 'de' ? 'deu' : 'eng'));
+  });
+}
+</script>
+</body>
+</html>
