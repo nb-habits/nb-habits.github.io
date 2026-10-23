@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NB Habits</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-de">
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="app-icon-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.8 -5.8 155.6 131.6" role="img" aria-label="NB Habits">
+        <path d="M66 20H99a19 19 0 0 1 0 38H66M66 58H97a21 21 0 0 1 0 42H66" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 100V20L66 100V20" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>NB Habits</h1>
+    <p class="tagline de">Dein persönlicher Produktivitäts-Begleiter für iOS</p>
+    <p class="tagline en">Your personal productivity companion for iOS</p>
+    <div class="lang-switcher">
+      <button class="active" onclick="setLang('de')">Deutsch</button>
+      <button onclick="setLang('en')">English</button>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <div class="de">
+    <span class="pill">Für iOS verfügbar</span>
+    <section>
+      <h2>Über die App</h2>
+      <p>NB Habits hilft dir, gute Gewohnheiten aufzubauen, Aufgaben zu verwalten, fokussiert zu arbeiten und dein Wohlbefinden zu verfolgen &#x2013; alles an einem Ort, vollständig offline und datenschutzfreundlich.</p>
+    </section>
+    <section>
+      <h2>Funktionen</h2>
+      <div class="feature-grid">
+        <div class="feature-chip"><span class="icon">&#x2705;</span>Habits</div>
+        <div class="feature-chip"><span class="icon">&#x1F4CB;</span>Aufgaben</div>
+        <div class="feature-chip"><span class="icon">&#x1F4C5;</span>Tagesplanung</div>
+        <div class="feature-chip"><span class="icon">&#x23F1;</span>Fokus-Timer</div>
+        <div class="feature-chip"><span class="icon">&#x1F4D4;</span>Tagebuch</div>
+        <div class="feature-chip"><span class="icon">&#x1F4CA;</span>Einblicke</div>
+        <div class="feature-chip"><span class="icon">&#x1F96F;</span>Ernährung</div>
+        <div class="feature-chip"><span class="icon">&#x1F3AF;</span>Ziele</div>
+      </div>
+    </section>
+    <section>
+      <div class="page-links">
+        <a class="page-link-card" href="privacy/">
+          <div class="link-icon">&#x1F512;</div>
+          Datenschutzerklärung
+        </a>
+        <a class="page-link-card" href="support/">
+          <div class="link-icon">&#x2709;&#xFE0F;</div>
+          Support
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <div class="en">
+    <span class="pill">Available for iOS</span>
+    <section>
+      <h2>About the App</h2>
+      <p>NB Habits helps you build good habits, manage tasks, work with focus, and track your well-being &#x2013; all in one place, fully offline and privacy-first.</p>
+    </section>
+    <section>
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature-chip"><span class="icon">&#x2705;</span>Habits</div>
+        <div class="feature-chip"><span class="icon">&#x1F4CB;</span>Tasks</div>
+        <div class="feature-chip"><span class="icon">&#x1F4C5;</span>Daily Planning</div>
+        <div class="feature-chip"><span class="icon">&#x23F1;</span>Focus Timer</div>
+        <div class="feature-chip"><span class="icon">&#x1F4D4;</span>Journal</div>
+        <div class="feature-chip"><span class="icon">&#x1F4CA;</span>Insights</div>
+        <div class="feature-chip"><span class="icon">&#x1F96F;</span>Nutrition</div>
+        <div class="feature-chip"><span class="icon">&#x1F3AF;</span>Goals</div>
+      </div>
+    </section>
+    <section>
+      <div class="page-links">
+        <a class="page-link-card" href="privacy/">
+          <div class="link-icon">&#x1F512;</div>
+          Privacy Policy
+        </a>
+        <a class="page-link-card" href="support/">
+          <div class="link-icon">&#x2709;&#xFE0F;</div>
+          Support
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p class="de">&#xa9; 2026 NB Habits &#x2022; Alle Rechte vorbehalten</p>
+    <p class="en">&#xa9; 2026 NB Habits &#x2022; All rights reserved</p>
+  </footer>
+
+</div>
+
+<script>
+function setLang(lang) {
+  document.body.className = 'lang-' + lang;
+  document.querySelectorAll('.lang-switcher button').forEach(function(b) {
+    b.classList.toggle('active', b.textContent.toLowerCase().startsWith(lang === 'de' ? 'deu' : 'eng'));
+  });
+}
+</script>
+</body>
+</html>
